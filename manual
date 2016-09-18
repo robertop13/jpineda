@@ -1,0 +1,425 @@
+Manual de Usuario
+
+
+Introducción
+Este es un programa se ha sido diseñado para su uso como una aplicación de ecuaciones matemáticas. Emplea una programación en la plataforma de Visual Studio y se utilizó un lenguaje de programación en C#. Por lo tanto, se pude ejecutar en cualquier sistema operativo que tenga instala Visual Studio. 
+
+Requisitos del programa
+Para el correcto funcionamiento del programa es necesario tener cubiertos una serie de requisitos, tanto Hardware como Software.
+
+Los requisitos previos de Software instalados para poder ejecutar el programa serian:
+Programa de Visual Studio
+Lenguaje de programación C#
+
+Menú de opciones
+El interfaz del programa ofrece al usuario la opción de ingresar la ecuación numérica a ejecutar, como se nuestra en la Figura. 
+
+Las diferentes opciones disponibles que se pueden realizar en el programa son las que se detallan en la siguiente tabla.
+
+Opción 	Signo 	Funcionalidad 
+Suma	               +	Permite realizar la suma de dos o más números 
+Resta 	               -	Realiza la resta de dos números 
+Multiplicación	                *	Multiplica dos  o más números 
+División 	               /	Divide dos números 
+		
+		Las opciones que aparecen en la tabla son las que pude realizar el programa. 
+El programa utiliza varios elementos que son:
+
+
+Operadores de C#
+Los operadores son los elementos que se utilizan para programar que se pueden aplicar a una o varias eXpresiones o instrucciones, los cuales pueden ser de incremento (++) de un operador unario, los que toman varios operadores, como las operaciones aritméticas (+, -, *, /) y estos que identifica también como operadores Binarios, y los operadores de condición (?, : ) estos son los que toman tres valores y se conocen como el único operador ternario.
+C# proporciona muchos operadores, que son símbolos que especifican las operaciones (matemáticas, indización, llamada de función, etc.) que se realizan en una eXpresión. Las operaciones en tipos enteros (como ==!=, <, >, &, |) se suelen permitir en tipos de enumeración (enum).
+
+Operadores principales
+X.y: acceso a miembros.
+X?.y: acceso a miembros condicional null.  Devuelve null si el operando izquierdo es null.  
+F(X): invocación de función.
+a[X]: indización de objeto agregado.
+a?[X]: indización condicional null.  Devuelve null si el operando izquierdo es null.  
+X++: incremento de postfijo.  Devuelve el valor de X y, a continuación, actualiza la ubicación de almacenamiento con el valor de X que es uno mayor (normalmente agrega el entero 1).  
+X--: decremento de postfijo.  Devuelve el valor de X; a continuación, actualiza la ubicación de almacenamiento con el valor de X que es uno menos (normalmente resta el entero 1).  
+New: creación de instancias de tipo.
+Typeof: devuelve el objeto System.Type que representa el operando.
+Checked: habilita la comprobación de desbordamiento para operaciones con enteros.
+Unchecked: deshabilita la comprobación de desbordamiento para operaciones con enteros.  Este es el comportamiento predeterminado del compilador.  
+Default (T): devuelve el valor inicializado predeterminado de tipo T, null para tipos de referencia, cero para tipos numéricos y cero o null en miembros para tipos de struct.
+Delégate: declara y devuelve una instancia de delegado.
+Sizeof: devuelve el tamaño en bytes del operando de tipo.
+->: desreferenciación del puntero combinada con acceso a miembros.
+
+Operadores unarios
+
++X: devuelve el valor de X.
+-X: negación numérica.
+!X: negación lógica.
+~X: complement bit a bit.
+++X: incremento de prefijo.  Devuelve el valor de X después de actualizar la ubicación de almacenamiento con el valor de X que es uno mayor (normalmente agrega el entero 1).  
+--X: decremento de prefijo.  Devuelve el valor de X después de actualizar la ubicación de almacenamiento con el valor de X que es uno menos (normalmente resta el entero 1).  
+(T) X: conversión de tipos.
+Await: espera una Task.
+&X: dirección de.
+*X: desreferenciación.
+
+
+
+Operadores multiplicativos
+
+X * y: multiplicación.
+X / y: división.  Si los operandos son enteros, el resultado es un entero que se trunca hacia cero (por ejemplo, -7 / 2 is -3).  
+X % y: módulo.  Si los operandos son enteros, devuelve el resto de dividir X entre y.  Si q = X / y y r = X % y, entonces X = q * y + r.  
+
+Operadores aditivos
+.  
+X + y: suma.
+X – y: resta.
+
+Operadores de desplazamiento
+
+X << y: desplaza los bits a la izquierda y rellena con cero a la derecha.
+X >> y: desplaza los bits a la derecha.  Si el operando izquierdo es int o long, los bits de la izquierda se rellenan con el bit de signo.  Si el operando izquierdo es uint o ulong, los bits de la izquierda se rellenan con cero.  
+
+Operadores de comprobación de tipos y relacionales
+
+X < y: menor que (true si X es menor que y).
+X > y: mayor que (true si X es mayor que y).
+X <= y: menor o igual que.
+X >= y: menor o igual que.
+Is: compatibilidad de tipos.  Devuelve true si el operando izquierdo evaluado se puede convertir al tipo especificado en el operando derecho (un tipo estático).  
+As: conversión de tipos.  Devuelve el operando izquierdo convertido al tipo especificado por el operando derecho (un tipo estático), pero a devuelve null donde (T)X produciría una eXcepción.  
+
+Operadores de igualdad
+
+X == y: igualdad.  De forma predeterminada, para los tipos de referencia distintos de string, devuelve igualdad de referencia (prueba de identidad).  Sin embargo, los tipos pueden sobrecargar ==, por lo que si su intención es probar la identidad, es mejor usar el método Reference Equals en object.  
+X!= y: distinto de.  Vea el comentario de ==.  Si un tipo sobrecarga ==, debe sobrecargar!=.  
+
+Operador lógico AND
+
+X & y: AND lógico o bit a bit.  El uso con tipos enteros y tipos enum suele estar permitido.  
+
+Operador lógico XOR
+
+X ^ y: XOR lógico o bit a bit.  Por lo general puede usarlo con tipos enteros y tipos enum.  
+
+Operador lógico OR
+
+X | y: OR lógico o bit a bit.  El uso con tipos enteros y tipos enum suele estar permitido.  
+
+Operador condicional AND
+
+X && y: AND lógico.  Si el primer operando es false, C# no evalúa el segundo operando.  
+
+Operador condicional OR
+X || y: OR lógico.  Si el primer operando es true, C# no evalúa el segundo operando.  
+
+Operador de uso combinado de null
+
+X ?? y: devuelve X si no es null; de lo contrario, devuelve y.
+
+Operador condicional
+
+t ? X : y: si la prueba t es true, evalúa y devuelve X; en caso contrario, evalúa y devuelve y.
+
+Operadores de asignación y Lambda
+
+X = y: asignación.
+X += y: incremento.  Agregue el valor de y al valor de X, almacene el resultado en X y devuelva el nuevo valor.  Si X designa un event, y debe ser una función adecuada que C# agregue como un controlador de eventos.  
+X -= y: decremento.  Reste el valor de y del valor de X, almacene el resultado en X y devuelva el nuevo valor.  Si X designa un event, y debe ser una función adecuada que C# quite como un controlador de eventos.  
+X *= y: asignación y multiplicación.  Multiplique el valor de y por el valor de X, almacene el resultado en X y devuelva el nuevo valor.  
+X /= y: asignación y división.  Divida el valor de X por el valor de y, almacene el resultado en X y devuelva el nuevo valor.  
+X %= y: asignación y módulo.  Divida el valor de X por el valor de y, almacene el resto en X y devuelva el nuevo valor.  
+X &= y: asignación y AND.  AND el valor de y con el valor de X, almacene el resultado en X y devuelva el nuevo valor.  
+X |= y: asignación y OR.  OR el valor de y con el valor de X, almacene el resultado en X y devuelva el nuevo valor.  
+X ^= y: asignación y XOR.  XOR el valor de y con el valor de X, almacene el resultado en X y devuelva el nuevo valor.  
+X <<= y: asignación y desplazamiento a la izquierda.  Desplace el valor de X a la izquierda y lugares, almacene el resultado en X y devuelva el nuevo valor.  
+X >>= y: asignación y desplazamiento a la derecha.  Desplace el valor de X a la derecha y posiciones, almacene el resultado en X y devuelva el nuevo valor.  
+=>: declaración lambda.
+
+Desbordamiento aritmético
+Los operadores aritméticos (+, -, *, /) pueden producir resultados fuera del rango de valores posibles para el tipo numérico implicado.  
+El desbordamiento aritmético de enteros produce una Overflow Exception o descarta los bits más significativos del resultado.  La división de enteros por cero siempre produce una DivideByZeroException.  
+El desbordamiento aritmético de punto flotante o la división por cero nunca producen una excepción, porque los tipos de punto flotante se basan en el estándar IEEE 754 y por tanto tienen disposiciones para representar el infinito y NaN (No es un número).
+
+El desbordamiento aritmético decimal siempre produce una Overflow Exception.  La división decimal por cero siempre produce unaDivideByZeroException.  
+Cuando se produce el desbordamiento de enteros, lo que suceda dependerá del contexto de ejecución, que puede ser comprobado o no comprobado.  En un contexto comprobado, se produce una Overflow Exception.  En un contexto no comprobado, se descartan los bits más significativos del resultado y la ejecución continúa.  
+
+Bucles:
+Un bucle es una instrucción o conjunto de instrucciones que se repite un número especificado de veces o hasta que se cumpla alguna condición. El tipo de bucle que deba utilizar dependerá de la tarea de programación y de sus preferencias a la hora de escribir código. 
+Existen diferentes tipos de Bucles, entre ellos están: 
+Foreach: repite un grupo de instrucciones incrustadas para cada elemente de una matriz o colección de objetos, se utiliza para recorrer la colección en iteración y obtener la información deseada, pero no se puede utilizar para agregar o quitar elementos de la colección de origen.  
+For: Ejecuta una instrucción o un bloque de instrucciones repetidamente hasta que una determinada expresión se evalúa como falsa. Es utilizado para recorrer en iteración matrices y para procesar secuencialmente. 
+Ejemplo
+                        j = Convert.ToByte(opera + 1);
+                            for (; j <= pcdo; j++)///for-3 con este for realizo las operaciones segundarias
+                            {
+    
+
+While: Ejecuta una instrucción o un bloque de instrucciones repetidamente hasta que una eXpresión específicamente se evalúa como falsa.
+Ejemplo
+        public void organiza(byte pcdo, byte opera, string[] operacion)
+        {
+
+            byte ultimo = 0; string cambio; byte posb = 0;
+            pcdo = 19;
+            while (pcdo >= 1)
+            {
+                ultimo = pcdo;
+                while (ultimo >= 1)
+                {
+                    posb = Convert.ToByte(ultimo - 1);
+                    if (posb != 255)
+                    {
+                        while (((posb != 255) && (posb >= 0)) && (operacion[posb] == " "))
+                        {
+                            cambio = operacion[ultimo];
+                            operacion[posb] = cambio;
+                            operacion[ultimo] = " ";
+                            posb--;
+                        }
+                    }
+                    ultimo--;
+
+                }
+
+                pcdo--;
+            }
+
+
+        }
+
+ 
+do-while: Ejecuta una instrucción o un bloque de instrucciones entre {} repetidamente hasta que una eXpresión específicamente como falsa. 
+
+Ejemplo
+        do
+            {
+                temp1 = Convert.ToString(Console.ReadKey().KeyChar);
+
+
+
+
+
+Operadores de Condición:
+Puede expresar cálculos que, de lo contrario, podrían requerir una construcción if-else más concisa mediante el operador condicional. Por ejemplo, el código siguiente usa primero una instrucción if y después un operador condicional para clasificar un entero como positivo o negativo.
+Ejemplo
+                            if (operacion[j] == "+")//if-4
+                                {
+                                    a = j; b = j;
+                                    a -= 1; b += 1;
+                                    X = Convert.ToDouble(operacion[a]); y = Convert.ToDouble(operacion[b]);
+                                    resultado = X + y;
+                                    a = j; b = j;
+                                    a -= 1; b += 1;
+                                    operacion[a] = Convert.ToString(resultado);
+                                    operacion[j] = " "; operacion[b] = " ";
+                                    j = a;
+                                    organizar.buscaresp(pcdo, opera, operacion);
+                                    acomodar.organiza(pcdo, opera, operacion);
+                                    pcdo -= 2;
+                                }
+                                else
+                                {
+                                    if (operacion[j] == "-")
+                                    {
+                                        a = j; b = j;
+                                        a -= 1; b += 1;
+                                        X = Convert.ToDouble(operacion[a]); y = Convert.ToDouble(operacion[b]);
+                                        resultado = X - y;
+
+
+                                        a = j; b = j;
+                                        a -= 1; b += 1;
+                                        operacion[a] = Convert.ToString(resultado);
+                                        operacion[j] = " "; operacion[b] = " ";
+                                        j = a;
+                                        organizar.buscaresp(pcdo, opera, operacion);
+                                        acomodar.organiza(pcdo, opera, operacion);
+                                        pcdo -= 2;
+                                    }
+
+                                }
+
+                            }
+
+
+                            if (opera >= 1)
+                            {
+                                k = Convert.ToByte(opera - 1);
+                                if (operacion[k] == "+" || operacion[k] == "(" || operacion[k] == ")" || operacion[k] == "-" || operacion[k] == "*" || operacion[k] == "/")
+                                {
+                                    operacion[opera] = " "; operacion[pcdo] = " ";
+                                    acomodar.organiza(pcdo, opera, operacion);
+
+                                }
+                                else
+                                {
+                                    operacion[opera] = "*"; operacion[pcdo] = " ";
+                                    acomodar.organiza(pcdo, opera, operacion);
+                                }
+                            }
+
+
+Paréntesis:
+Son usados comúnmente para definir la sintaxis de la estructura de algunas expresiones, y son usados comúnmente en programación para forzar y dar una prioridad a una expresión matemática o de otra índole.
+Además de usarlos para especificar el orden de las operaciones en una expresión, los paréntesis se utilizan para realizar las siguientes tareas:
+1.	Especificar conversiones o conversiones de tipo.
+ 	double X = 1234.7;
+	int a;
+	a = (int)X; // Cast double to int
+2.	Invocar métodos o delegados.
+TestMethod();
+
+        enviar.parentesis(operacion, pfin);
+            final.imprimir(operacion);
+
+            
+            byte posX = 5;
+            for (int m = 0; m <= 19; m++)
+            {
+
+                Console.SetCursorPosition(posX, 6); Console.WriteLine(operacion[m]);
+                posX += 1;
+            }
+
+        }
+    }
+}
+
+El operador () no se puede sobrecargar
+Una expresión de conversión podría llevar a una sintaxis ambigua.  Por ejemplo, la expresión (X)–y puede interpretarse como una expresión de conversión (una conversión del tipo –y al tipo X) o como una expresión de suma combinada con una expresión entre paréntesis, que calcula el valor de X – y.  
+
+Quitar espacios:
+Quita todos los caracteres de espacio en blanco del principio y el final del objeto String actual.
+Valor devuelto (Type: System.String )
+Cadena que queda una vez quitado todos los caracteres de espacio en blanco del principio y el final de la cadena actual. Si no se puede quitar ningún carácter de la instancia actual, el método devuelve la instancia actual sin cambios.
+
+El Trim método quita de la cadena actual todos los caracteres de espacio en blanco iniciales y finales. Cada operación de recorte inicial y final se detiene cuando se encuentra un carácter no sea un espacio en blanco. Por ejemplo, si la cadena actual es "abc Xyz", la Trim método devuelve "abc Xyz". Para quitar los caracteres de espacio en blanco entre palabras en una cadena.
+Repeticiones:
+Esta función permite la repetición de una lista o una secuencia de instrucciones, el número de veces que las instrucciones se ejecutan, estas se pueden determinar de manera explicitas o a través de una condición que explique cuando se puede ejecutar o no. 
+
+Tipos de estructuras de repeticiones:
+Una estructura repetitiva permite ejecutar una instrucción o un conjunto de instrucciones varias veces.
+
+Una ejecución repetitiva de sentencias se caracteriza por:
+•	La o las sentencias que se repiten.
+•	La prueba de condición antes de cada repetición, que motivará que se repitan o no las sentencias.
+En C#, todos los ciclos repiten por verdadero y cortan por falso.
+ 
+Los ciclos de repetición son:
+•	While
+•	for
+•	do While
+La sintaxis del While es:
+        X=1;   Inicialización de la variable contador
+ 
+        While(X<10)  Evaluación de la condición
+            {
+                   Sentencia o sentencias a ejecutar
+                   X++;   Incremento de la variable contador
+             }
+En este ejemplo la estructura requiere una variable entera que cumple la función de un CONTADOR de vueltas. 
+En la sección indicada como "inicialización contador", se suele colocar el nombre de la variable que hará de contador, asignándole a dicha variable un valor inicial. En la sección de "condición" se coloca la condición que deberá ser verdadera para que el ciclo continúe (en caso de un falso, el ciclo se detendrá). Y finalmente, en la sección de "incremento contador" se coloca una instrucción que permite modificar el valor de la variable que hace de contador (para permitir que alguna vez la condición sea falsa).
+
+Syntaxes’ del for:
+        For(X=0; X<10;X++)
+          {
+               Sentencia o sentencias a ejecutar
+           }
+Cuando el ciclo comienza, antes de dar la primera vuelta, la variable del for toma el valor indicado en la sección de "inicialización contador". Inmediatamente se verifica, en forma automática, si la condición es verdadera. En caso de serlo se ejecuta el bloque de operaciones del ciclo, y al finalizar el mismo se ejecuta la instrucción que se haya colocado en la tercera sección.
+Seguidamente, se vuelve a controlar el valor de la condición, y así prosigue hasta que dicha condición entregue un falso.
+En general, la estructura for se usa en aquellas situaciones en las cuales CONOCEMOS la cantidad de veces que queremos que se ejecute el bloque de instrucciones. Veremos, sin embargo, que en el lenguaje C# la estructura for puede usarse en cualquier situación repetitiva, porque en última instancia no es otra cosa que una estructura While generalizada.
+
+Syntaxes’ del    do while:
+        X=0;
+        do
+        {
+             Sentencia o sentencias a ejecutar
+             X++; Incremento dela variable contador
+         }
+         While (X<10);
+
+La estructura do While es otra estructura repetitiva, la cual ejecuta al menos una vez su bloque repetitivo, a diferencia del While o del for que podían no ejecutar el bloque.
+Esta estructura repetitiva se utiliza cuando conocemos de antemano que por lo menos una vez se ejecutará el bloque repetitivo.
+La condición de la estructura está abajo del bloque a repetir, a diferencia del While o del for que está en la parte superior.
+El bloque de operaciones se repite MIENTRAS que la condición sea Verdadera.
+Si la condición retorna Falso el ciclo se detiene. 
+
+También si usted no cuenta con un programa visual studio se recomiendo que pueda instalar el siguiente acceso directo para que pueda realizar las operaciones aritméticas 
+Link para la aplicación
+
+https://drive.google.com/file/d/0B0DM_L6uhYu3MEVSQzUwMG9DSDg/view?usp=sharing
+
+
+
+
+
+
+
+Pasos para la instalación 
+
+Paso 1.
+ De clic al link dejado en el manual para que lo dirija a el instalador
+https://drive.google.com/file/d/0B0DM_L6uhYu3MEVSQzUwMG9DSDg/view?usp=sharing
+
+
+
+
+
+
+Paso 2. 
+Siga las instrucciones que le pide el programa dando clic en el botón descargar
+
+ 
+
+Paso 3
+Buscar el icono del instalador en la carpeta de descargas
+ 
+Paso 4
+Darle doble clic al icono y si le sale una pantalla como la siguiente hacer lo que se le indica en los siguientes pasos
+
+ 
+
+Paso 5
+Darle a la opción donde dice más información y se le desplegara otra opción aparte de que no ejecutar como en la imagen
+
+ 
+Paso 6
+Darle en el botón ejecutar de todas formas para que lo comience a instalar y le va a pedir permiso para que el programa se instale usted le da que si está de acuerdo
+ 
+
+Paso 7
+Después se le desplegara una siguiente pantalla la cual usted le tiene que dar clic al botón de siguiente
+ 
+
+
+Paso 8
+Luego le desplegar otra pantalla donde sigue las instrucciones dándole en siguiente 
+
+ 
+
+Paso 9
+Se le desplegara otra pantalla donde le preguntara si está de acuerdo con los de instalar el math portable poner el check en aceptar y darle siguiente
+ 
+Paso 10
+Se desplegara otra pantalla donde se le dará al botón siguiente
+ 
+
+Paso 11
+Se le desplegara otra pantalla donde le dirá que el destino no existe que si quiere créalo se le da al botón que si para que el programa siga con su descarga
+
+ 
+
+Paso 12
+Se le desplegara otra pantalla donde dirá que si lo quiere instalar dándole en el botón descargar
+
+ 
+
+Paso 13
+Se le desplegara la siguiente pantalla donde le dice que el programa fue instalado satisfactoriamente
+
+ 
+
+
+Paso 14
+Por último se le desplegara la pantalla donde le indica salir de la instalación el cual el icono del math portable estará instalado en su escritorio para que usted pueda hacer uso de el 
+ 
+
